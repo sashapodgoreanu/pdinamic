@@ -7,11 +7,23 @@ import pdinamica.Fibonaci;
 
 public class FibonaciTest {
 
+  public static void main(String[] args) {
+    //Result result = JUnitCore.runClasses(FibonaciTest.class);
+  
+    //for (Failure failure : result.getFailures()) {
+   //    System.out.println(failure.toString());
+   // }
+  
+   //System.out.println(result.wasSuccessful());
+
+   System.out.println("hello");
+ }
+
   @Test
   public void testfibMemoized() {
     //prpare
     Fibonaci fibonaci = new Fibonaci();
-    for(int i =1; i < 43; i++){
+    for(int i =1; i < 30; i++){
 
       //act
       int fibMemoizedResult = fibonaci.fibMemoized(i);
@@ -26,7 +38,7 @@ public class FibonaciTest {
   public void testfibBottomUp() {
     //prpare
     Fibonaci fibonaci = new Fibonaci();
-    for(int i =1; i < 43; i++){
+    for(int i =1; i < 30; i++){
 
       //act
       int fibMemoizedResult = fibonaci.fibBottomUp(i);
